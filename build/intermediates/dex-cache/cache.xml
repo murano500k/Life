@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/artem/.android/build-cache/e0b7665ce9ccc64251036ba8413fb431cb0c6b5f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
+        <dex dex="/home/artem/projects/Life/app/build/intermediates/pre-dexed/debug/classes_174dcee57b26fcf89525a92c496915cce6862ab2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/artem/.android/build-cache/557a2f305958aab87f2f1d57f5424da01dd47ca6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
+        <dex dex="/home/artem/projects/Life/app/build/intermediates/pre-dexed/debug/classes_fc781d214e3bed277f3dfe997195a44b394aa1f7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/artem/.android/build-cache/34087597bc06c6677a85e5d4fb03136b6a840f2c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="61bfd9f396987aeca22f45b56180f4ef0251b231">
+        <dex dex="/home/artem/projects/Life/app/build/intermediates/pre-dexed/debug/classes_61abc3b0b1db30ada4cc6c3da9db73386f1efcbf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/artem/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.0.6/b0100ee9ceee5d1861371aefc814cee3e78ed23b/rxjava-2.0.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b0100ee9ceee5d1861371aefc814cee3e78ed23b">
+        <dex dex="/home/artem/projects/Life/app/build/intermediates/pre-dexed/debug/rxjava-2.0.6_249350fc6d26ac1f3976a69ff0ec65d064a6d557.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/artem/.android/build-cache/60c85f3d0e8b443e1028217b847479329c1965c9/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="/home/artem/projects/Life/app/build/intermediates/pre-dexed/debug/classes_1389d4632eea26a68fd750ad0cd3265478b07bac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/artem/bin/sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="/home/artem/projects/Life/app/build/intermediates/pre-dexed/debug/support-annotations-25.2.0_3765d40199f56ef1a01f8ec4fe54e5907820f516.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/artem/.android/build-cache/a5747379eee64c9026a1d737362379b3219d0eaa/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="152de8da301561dcb0946471697a420d8f7a68c5">
+        <dex dex="/home/artem/projects/Life/app/build/intermediates/pre-dexed/debug/classes_f96e59d44ac37328a2803665f172f761ffc5f96c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/artem/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.0/14b8c877d98005ba3941c9257cfe09f6ed0e0d74/reactive-streams-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="14b8c877d98005ba3941c9257cfe09f6ed0e0d74">
+        <dex dex="/home/artem/projects/Life/app/build/intermediates/pre-dexed/debug/reactive-streams-1.0.0_55f6deacdfd2cfc0b533362ccb383071d7933f98.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/artem/.android/build-cache/9c42d1fd082fac1302aaa920555234e4fdbea90e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="/home/artem/projects/Life/app/build/intermediates/pre-dexed/debug/classes_ab188d7685c72930b8b4d27e3c7b49758647854b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/artem/.android/build-cache/5b2fb6a7bb81d1b651b6aec7fe1141ebfef0cdc6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ea6a989b83d19b1b461281e0475a6cd6514897f8">
+        <dex dex="/home/artem/projects/Life/app/build/intermediates/pre-dexed/debug/classes_31ae01c3dd5947892f85be8ea1bbefa86c5893fc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/artem/.android/build-cache/93f07cee3f9787fac8e1f69573bb290b3161b936/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/artem/projects/Life/app/build/intermediates/pre-dexed/debug/classes_31f6d94e861f9145c539b8196c7044c3a251d1a4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/artem/.android/build-cache/d542926c5c60039df3ff78e76ef0200cbb304ae1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="/home/artem/projects/Life/app/build/intermediates/pre-dexed/debug/classes_0cded764f9f00bd4101cc4fceeb1763e45867b47.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/artem/.android/build-cache/5f3b7f977f61b55aabcfc300d23d1a61624a3ce1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="/home/artem/projects/Life/app/build/intermediates/pre-dexed/debug/classes_5238cccdb6fc5f881e5c1f1bf671d562a419431b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/artem/.android/build-cache/9d3df3626553e9542d80e287bfecca4784371198/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
+        <dex dex="/home/artem/projects/Life/app/build/intermediates/pre-dexed/debug/classes_d48408250589fbb5b5e55e691c433289bcb2eef3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/artem/.android/build-cache/ce57b50bb20f79f957d9a127dab1fbe591332d9c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4119ea97a7191ff9b8f33b534ea220448f62f491">
+        <dex dex="/home/artem/projects/Life/app/build/intermediates/pre-dexed/debug/classes_5c95f4ed861250e1189d22735276356fb410a39d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/artem/.android/build-cache/8b5d1fba17bcdc8308700e3023ceac36c6d69dc6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e51c2f662bb72419632af5192553c37e33890a99">
+        <dex dex="/home/artem/projects/Life/app/build/intermediates/pre-dexed/debug/classes_ce8f99a26eaa52dc7d32e06540172f6864f2b07d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/artem/.android/build-cache/b44889cac512c7bcd2614fec9ea20415e5bfa4b9/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="/home/artem/projects/Life/app/build/intermediates/pre-dexed/debug/classes_123c44f112772d0c0724b3495723133a3a9cd10a.jar" />
+    </item>
+
+</items>

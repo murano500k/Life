@@ -13,6 +13,10 @@ public class Position {
 		this.column = column;
 		this.index = index;
 	}
+	public String getKey(){
+		return row+"."+column;
+	}
+
 
 	public int getIndex() {
 		return index;

@@ -13,6 +13,7 @@ import com.stc.life.LifeCallback;
 import com.stc.life.SettingsActivity;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.Callable;
@@ -30,8 +31,9 @@ import static com.stc.life.Const.SURVIVAL_RULE;
  * Created by artem on 3/10/17.
  */
 
-public class WorldView extends View {
-	List<Cell> cells;
+public class
+WorldView extends View {
+	HashMap<String,Cell> cells;
 	public int cellSize, cellCount,columnCount,rowCount;
 	private Paint paintLive;
 	private static final String TAG = "WorldView";
@@ -57,7 +59,7 @@ public class WorldView extends View {
 	}
 	private void initVars(){
 		paintLive=new Paint();
-		cells = new ArrayList<>();
+		cells = new HashMap<>();
 		this.cellSize= SettingsActivity.getCellSize(getContext());
 		this.seed=SettingsActivity.getSeed(getContext());
 		//paintLive.setColor(getResources().getColor(SettingsActivity.getCellColor(getContext())));
@@ -108,7 +110,7 @@ public class WorldView extends View {
 		Cell cell=null;
 		while(row<rowCount && column<columnCount){
 			cell = createCell(index, row,column, cell);
-			cells.add(index, cell);
+			cells.put(cell.getPosition().getKey(), cell);
 			column++;
 			if(column>=columnCount) {
 				column=0;
@@ -155,7 +157,7 @@ public class WorldView extends View {
 			@Override
 			public Long call() throws Exception {
 
-				for(Cell cell : cells){
+				for(Cell cell : cells.values()){
 					cell.setAlive(getNewState(cell));
 				}
 				return System.currentTimeMillis()/1000;
@@ -186,7 +188,7 @@ public class WorldView extends View {
 	@Override
 	protected void onDraw(Canvas canvas) {
 
-		for(Cell cell: cells){
+		for(Cell cell: cells.values()){
 			if(cell.isAlive()) {
 				canvas.drawRect(cell.getRect(), paintLive);
 			}
@@ -234,13 +236,6 @@ public class WorldView extends View {
 	}
 
 
-	public ArrayList<Integer> getState() {
-		ArrayList<Integer> states=new ArrayList<>(cellCount);
-		for(Cell cell : cells){
-			states.add(cell.getPosition().getIndex(), cell.isAlive() ? 1 : 0);
-		}
-		return states;
-	}
 
 	public void reset() {
 		initVars();
