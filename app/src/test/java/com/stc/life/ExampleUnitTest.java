@@ -2,8 +2,6 @@ package com.stc.life;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 /**
  * Example local unit test, which will execute on the development machine (host).
  *
@@ -11,7 +9,26 @@ import static org.junit.Assert.*;
  */
 public class ExampleUnitTest {
     @Test
-    public void addition_isCorrect() throws Exception {
-        assertEquals(4, 2 + 2);
+    public void testLife() throws Exception {
+	    boolean [][] arr=new boolean[5][10];
+
+	    arr[2][1]=arr[2][2]=arr[2][3]=true;
+		printMap(arr);
+        LifeGameplay gameplay=new LifeGameplay();
+	    printMap(gameplay.getUpdatedMap(arr));
+
+    }
+    private void printMap(boolean[][]map){
+
+	    System.out.println("\n###########################");
+	    for (int i = 0; i < 5; i++) {
+		    String row ="";
+		    for (int j = 0; j < 10; j++) {
+			    row+=(map[i][j] ? "x" : "o")+" ";
+		    }
+		    System.out.println(row);
+	    }
+	    System.out.println("###########################\n\n");
+
     }
 }
