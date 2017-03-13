@@ -12,6 +12,7 @@ public class Cell {
 	private Rect rect;
 	private boolean isAlive;
 
+
 	public Cell(Position position, Rect rect) {
 		this.position = position;
 		this.rect = rect;
@@ -37,7 +38,7 @@ public class Cell {
 	@Override
 	public String toString() {
 		return "Cell{" +
-				" index=" + position.getIndex()+
+
 				", row=" + position.getRow() +
 				", column=" + position.getColumn() +
 				"\nrect=" + rect.width()+" x "+rect.height() +

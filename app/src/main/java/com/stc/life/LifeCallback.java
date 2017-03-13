@@ -5,5 +5,7 @@ package com.stc.life;
  */
 
 public interface LifeCallback {
+	void worldIsReady(int w ,int h);
+
 	void worldIsDrawn();
 }

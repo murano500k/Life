@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.stc.life.model.WorldModel;
 import com.stc.life.model.WorldView;
 
 import java.util.ArrayList;
@@ -142,6 +143,16 @@ public class LifeActivity extends AppCompatActivity implements LifeCallback{
 	protected void onStop() {
 		super.onStop();
 		if(autoPlaying)toggleAutoPlay(fabPlay);
+	}
+
+	@Override
+	public void worldIsReady(int h, int w) {
+		WorldModel model=new WorldModel(h, w,
+				SettingsActivity.getCellSize(this),
+				SettingsActivity.getSeed(this));
+		model.initCells();
+		model.randomLife();
+		world.setModel(model);
 	}
 
 	@Override
