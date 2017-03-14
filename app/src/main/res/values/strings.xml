@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Life</string>
+    <string name="app_name">GameOfLife</string>
     <string name="title_activity_life">LifeActivity</string>
     <string name="title_activity_settings">Settings</string>
 
@@ -77,5 +77,6 @@
     <string name="pref_title_color">Live cell color</string>
     <string name="pref_title_cell_color">Cell color</string>
     <string name="pref_title_bg_color">Background color</string>
+    <string name="title_activity_main">MainActivity</string>
 
 </resources>

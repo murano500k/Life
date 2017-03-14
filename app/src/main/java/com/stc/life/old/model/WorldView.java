@@ -1,16 +1,17 @@
-package com.stc.life.model;
+/*
+package com.stc.life.old.model;
 
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
-import android.graphics.Rect;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
 
-import com.stc.life.LifeCallback;
-import com.stc.life.SettingsActivity;
+import com.stc.life.Cell;
+import com.stc.life.prefs.SettingsActivity;
+import com.stc.life.old.LifeCallback;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,9 +27,11 @@ import io.reactivex.schedulers.Schedulers;
 import static com.stc.life.Const.CREATION_RULE;
 import static com.stc.life.Const.SURVIVAL_RULE;
 
+*/
 /**
  * Created by artem on 3/10/17.
- */
+ *//*
+
 
 public class WorldView extends View {
 	List<Cell> cells;
@@ -132,23 +135,7 @@ public class WorldView extends View {
 		}
 		return list;
 	}
-	private Cell createCell(int index, int row, int column, Cell lastCell){
-		Position position=new Position(index, row,column);
-		int left,right,top,bottom;
-		if(lastCell==null || lastCell.getPosition().getColumn()==columnCount-1 ){
-			left=0;
-			right=cellSize;
-			top=h-cellSize*row;
-			bottom=top-cellSize;
-		}else {
-			left=lastCell.getRect().right;
-			right=left+cellSize;
-			top=lastCell.getRect().top;
-			bottom=lastCell.getRect().bottom;
-		}
-		Rect rect=new Rect(left,top, right,bottom);
-		return new Cell(position,rect);
-	}
+
 	public void iterate(){
 		Observable.fromCallable(new Callable<Long>() {
 
@@ -249,3 +236,4 @@ public class WorldView extends View {
 		invalidate();
 	}
 }
+*/

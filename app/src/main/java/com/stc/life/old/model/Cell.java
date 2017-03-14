@@ -1,10 +1,13 @@
-package com.stc.life.model;
+/*
+package com.stc.life.old.model;
 
 import android.graphics.Rect;
 
+*/
 /**
  * Created by artem on 3/10/17.
- */
+ *//*
+
 
 public class Cell {
 	private static final String TAG = "Cell";
@@ -46,3 +49,4 @@ public class Cell {
 				'}';
 	}
 }
+*/

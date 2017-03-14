@@ -1,4 +1,5 @@
-package com.stc.life;
+/*
+package com.stc.life.old;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,7 +13,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.stc.life.model.WorldView;
+import com.stc.life.R;
+import com.stc.life.prefs.SettingsActivity;
+import com.stc.life.old.model.WorldView;
 
 import java.util.ArrayList;
 
@@ -152,3 +155,4 @@ public class LifeActivity extends AppCompatActivity implements LifeCallback{
 		}
 	}
 }
+*/

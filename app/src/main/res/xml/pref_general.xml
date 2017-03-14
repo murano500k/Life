@@ -8,18 +8,27 @@
         android:key="pref_BgColor"
         android:title="@string/pref_title_bg_color"
         />
-    <EditTextPreference
+
+    <com.stc.life.prefs.SeedPreference
         android:key="pref_Seed"
-        android:inputType="number"
-        android:title="Random settings. Smaller number - more cells"/>
+        android:title="Random settings. Smaller number - more cells"
+        android:defaultValue="5"
+        android:dialogLayout="@xml/number_pref"
+        />
+    <com.stc.life.prefs.CellSizePreference
+        android:key="pref_CellSize"
+        android:defaultValue="10"
+        android:title="Cell size in pixels"
+        android:dialogLayout="@xml/number_pref"
+        />
+
     <EditTextPreference
         android:key="pref_SleepTime"
+        android:title="Sleep between steps in ms"
+        android:defaultValue="1"
         android:inputType="number"
-        android:title="Sleep between steps in ms"/>
-    <EditTextPreference
-        android:key="pref_CellSize"
-        android:inputType="number"
-        android:title="Cell size in pixels"/>
+        android:numeric="integer"
+        />
 
 
     <!--<SwitchPreference

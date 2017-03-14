@@ -1,4 +1,4 @@
-package com.stc.life;
+package com.stc.life.prefs;
 
 
 import android.content.Context;
@@ -10,6 +10,11 @@ import android.preference.PreferenceManager;
 import android.view.MenuItem;
 
 import com.rarepebble.colorpicker.ColorPreference;
+import com.stc.life.R;
+
+import static com.stc.life.Const.DEFAULT_CELL_SIZE;
+import static com.stc.life.Const.DEFAULT_SEED;
+import static com.stc.life.Const.DEFAULT_SLEEP_TIME;
 
 public class SettingsActivity extends PreferenceActivity implements SharedPreferences.OnSharedPreferenceChangeListener {
 	private static final String TAG = "SettingsActivity";
@@ -17,17 +22,13 @@ public class SettingsActivity extends PreferenceActivity implements SharedPrefer
 	public static final String KEY_PREF_BG_COLOR = "pref_BgColor";
 	public static final String KEY_PREF_SLEEP_TIME = "pref_SleepTime";
 	public static final String KEY_PREF_CELL_SIZE = "pref_CellSize";
-	public static final String KEY_PREF_SHOW_INFO = "pref_showInfo";
 	public static final String KEY_PREF_SEED = "pref_Seed";
 
 
 
 
-	public static final int DEFAULT_CELL_COLOR=R.color.colorPrimary;
-	public static final int DEFAULT_BG_COLOR=R.color.colorAccent;
-	public static final int DEFAULT_CELL_SIZE=8;
-	public static final int DEFAULT_SLEEP_TIME=100;
-	public static final int DEFAULT_SEED = 8;
+
+
 
 
 	@Override
@@ -65,12 +66,17 @@ public class SettingsActivity extends PreferenceActivity implements SharedPrefer
 		Preference pref = findPreference(key);
 		if(key.equals(KEY_PREF_CELL_COLOR)) {
 			ColorPreference colorPreference = (ColorPreference) pref;
-			colorPreference.setColor(sharedPreferences.getInt(key, DEFAULT_CELL_COLOR));
+			colorPreference.setColor(getCellColor(this));
 		}else if(key.equals(KEY_PREF_BG_COLOR)) {
 			ColorPreference colorPreference = (ColorPreference) pref;
-			colorPreference.setColor(sharedPreferences.getInt(key, DEFAULT_BG_COLOR));
+			colorPreference.setColor(getBgColor(this));
 		}else if(key.equals(KEY_PREF_SLEEP_TIME)){
-
+			String val=sharedPreferences.getString(pref.getKey(),null);
+			if(val!=null) pref.setSummary(val);
+		}else if(key.equals(KEY_PREF_SEED)){
+			pref.setSummary(String.valueOf(getSeed(this)));
+		} if(key.equals(KEY_PREF_CELL_SIZE)){
+			pref.setSummary(String.valueOf(getCellSize(this)));
 		}
 	}
 	@Override
@@ -84,34 +90,25 @@ public class SettingsActivity extends PreferenceActivity implements SharedPrefer
 		return super.onOptionsItemSelected(item);
 	}
 	public static int getCellColor(Context context){
-		return PreferenceManager.getDefaultSharedPreferences(context).getInt(KEY_PREF_CELL_COLOR, DEFAULT_CELL_COLOR );
+		return PreferenceManager.getDefaultSharedPreferences(context).getInt(KEY_PREF_CELL_COLOR, R.color.default_cell_color);
 	}
 	public static int getBgColor(Context context){
-		return PreferenceManager.getDefaultSharedPreferences(context).getInt(KEY_PREF_BG_COLOR, DEFAULT_BG_COLOR );
+		return PreferenceManager.getDefaultSharedPreferences(context).getInt(KEY_PREF_BG_COLOR, R.color.default_bg_color);
 	}
 	public static int getCellSize(Context context){
-		return Integer.parseInt(
-				PreferenceManager.getDefaultSharedPreferences(context).getString(KEY_PREF_CELL_SIZE,
-						String.valueOf(
+		return PreferenceManager.getDefaultSharedPreferences(context).getInt(KEY_PREF_CELL_SIZE,
 								DEFAULT_CELL_SIZE
-						))
 		);
 	}
 	public static int getSleepTime(Context context){
-
 		return Integer.parseInt(
 				PreferenceManager.getDefaultSharedPreferences(context).getString(KEY_PREF_SLEEP_TIME,
-						String.valueOf(
-								DEFAULT_SLEEP_TIME
-						))
-		);
+						DEFAULT_SLEEP_TIME.toString()
+		));
 	}
 	public static int getSeed(Context context){
-		return Integer.parseInt(
-				PreferenceManager.getDefaultSharedPreferences(context).getString(KEY_PREF_SEED,
-						String.valueOf(
-								DEFAULT_SEED
-						))
+		return PreferenceManager.getDefaultSharedPreferences(context).getInt(KEY_PREF_SEED,
+				DEFAULT_SEED
 		);
 	}
 

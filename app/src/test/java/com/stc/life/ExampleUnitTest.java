@@ -14,8 +14,7 @@ public class ExampleUnitTest {
 
 	    arr[2][1]=arr[2][2]=arr[2][3]=true;
 		printMap(arr);
-        LifeGameplay gameplay=new LifeGameplay();
-	    printMap(gameplay.getUpdatedMap(arr));
+
 
     }
     private void printMap(boolean[][]map){
