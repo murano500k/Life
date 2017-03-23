@@ -1,6 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'irp2release'
+            keyPassword 'irpandroid'
+            storeFile file('/home/artem/projects/keystoreForMyApps/irp.jks')
+            storePassword 'irpandroid'
+        }
+    }
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
@@ -16,6 +24,7 @@ android {
     }
     buildTypes {
         release {
+            signingConfig signingConfigs.config
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
